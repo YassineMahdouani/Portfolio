@@ -344,19 +344,37 @@ h1 {
 
 .rte-image-placeholder {
     background: #111827;
-    height: 300px;
+    height: 320px;
     border-radius: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: 1px solid var(--border);
     overflow: hidden;
+    position: relative;
+    display: block;
 }
 
 .rte-image-placeholder img {
     width: 100%;
     height: 100%;
+    display: block;
     object-fit: cover;
+}
+
+/* Cache les textes LOGO RTE / PHOTO INFRASTRUCTURE */
+.rte-image-placeholder span {
+    display: none;
+}
+
+/* Logo RTE : pas de zoom dégueu, image entière visible */
+.rte-image-placeholder.main-logo img {
+    object-fit: contain;
+    padding: 35px;
+    background: #111827;
+}
+
+/* Photo pylône : prend tout l’espace */
+.rte-image-placeholder.gallery img {
+    object-fit: cover;
+    object-position: center;
 }
 
 /* BOUTONS PROJETS */
