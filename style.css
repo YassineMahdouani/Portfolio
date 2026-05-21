@@ -538,3 +538,18 @@ footer {
         transform: translateY(0);
     }
 }
+#veille .tag-cloud a {
+    text-decoration: none;
+}
+/* SOURCES VEILLE */
+
+.sources-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.sources-buttons .btn-project {
+    display: inline-block;
+}
